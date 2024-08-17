@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/personal-information-styles.css">
+    <title>EconoScope -Personal Information</title>
+</head>
+<body>
+<div class="container">
+    <h1>Personal Information</h1>
+    <form action="/submit-personal-info" method="post">
+        <div>
+            <label for="marital-status">Civilstatus</label>
+            <select id="marital-status" name="maritalStatus">
+                <option value="single">Single</option>
+                <option value="married">Gift</option>
+                <option value="divorced">Skilt</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="housing-type">Boligtype</label>
+            <select id="housing-type" name="housingType">
+                <option value="apartment">Lejebolig</option>
+                <option value="house">Hus</option>
+                <option value="condo">Ejer lejlighed</option>
+                <option value="condo">Andels lejlighed</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="number-of-children">Antal Børn</label>
+            <input type="number" id="number-of-children" name="numberOfChildren" min="0" max="20">
+        </div>
+
+        <div>
+            <label for="occupation">Beskæftigelse</label>
+            <input type="text" id="occupation" name="occupation" placeholder="Din job title">
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+</body>
+</html>
